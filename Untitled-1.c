@@ -1,12 +1,6 @@
-//scanf("%d", &NOMEVARIAEL);
-// limpa o teclado
-// fflush(stdin);
-//gets(nome);
-
 #include <stdio.h>
 #include <conio.h>
 #include<stdlib.h>
-//#define TAM 3
 
 typedef struct{
   int codigo, censura, duracao, qtd_total, qtd_alocada;
@@ -14,7 +8,7 @@ typedef struct{
 }filme;
 
 typedef struct{
-  filme filmes[4];
+  filme filmes[4];  //mudar para 9 depois dos testes
   int disponiveis, locados;
   float preco;
 }locadora;
@@ -22,15 +16,15 @@ typedef struct{
 int main(void){
 
   locadora loc;
-  int TAM, escolha, l, qtd_filmes, codigo, idade;
+  int escolha, l, qtd_filmes, codigo, idade;
 
 
     // Inicialização de variáveis
-    codigo = 0;
-    loc.disponiveis = 5;
-    loc.locados = 2;
-    loc.preco = 134.12;
-    qtd_filmes = 2;
+    // codigo = 0;
+    // loc.disponiveis = 5;
+    // loc.locados = 2;
+    // loc.preco = 134.12;
+    // qtd_filmes = 2;
 
 
     do{
@@ -234,7 +228,7 @@ int main(void){
                     }					
                 }while (escolha == 3);
             }
-///////////// parei aqui vendo os }
+
             case 3: {
                 do{
                     // Devolução de filme
@@ -320,17 +314,10 @@ int main(void){
                 printf("GERAL");
                 printf(" > Disciplina: ECD");
                 printf(" > Professor.: Elyssandro Piffer");
-                printf(" > Data......: 26/05/2021");
+                printf(" > Data......: 06/06/2021");
                 printf("");
                 printf("ACADÊMICO");
-
-
                 printf(" > Vitor Gibim ............... - RA: 00212191");
-
-
-                printf(" > Gabriel Ciolin Fasolo  .......... - RA: 00210090 ");
-
-
                 printf("");
                 printf("[1]  Voltar");
                 printf("------------------------------------\n");
